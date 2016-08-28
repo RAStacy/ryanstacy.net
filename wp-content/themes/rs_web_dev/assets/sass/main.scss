@@ -1,0 +1,39 @@
+// External CSS
+// Put source css in `assets/css/vendor`.
+// Gulp will copy them over with the extension `.scss`.
+
+// Variables
+@import "base/variables";
+
+// Bootstrap
+@import "bootstrap-sass/stylesheets/bootstrap";
+
+// Helpers
+@import "util/mixins";
+@import "util/utilities";
+
+// Base html elements
+@import "base/base";
+
+// Site header and footer
+@import "base/header";
+@import "base/footer";
+
+// Global site styles
+@import "base/styles";
+
+// Per page unique styles
+@import "pages/home";
+@import "pages/pages";
+
+// Components
+@import "components/header";
+@import "components/navbar";
+@import "components/sidebar";
+@import "components/footer";
+@import "components/featured";
+@import "components/sliders";
+@import "components/search";
+@import "components/modal";
+@import "components/gradients";
+@import "components/buttons";

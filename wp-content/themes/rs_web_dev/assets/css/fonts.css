@@ -1,0 +1,13 @@
+/* #Font-Face
+================================================== */
+@font-face {
+    font-family: '8-bit';
+    src: url('wp-content/themes/rs_web_dev/assets/fonts/8-bit/8-bit_madness-webfont.eot');
+    src: url('wp-content/themes/rs_web_dev/assets/fonts/8-bit/8-bit_madness-webfont.eot?#iefix') format('embedded-opentype'),
+        url('wp-content/themes/rs_web_dev/assets/fonts/8-bit/8-bit_madness-webfont.woff') format('woff'),
+        url('wp-content/themes/rs_web_dev/assets/fonts/8-bit/8-bit_madness-webfont.ttf') format('truetype'),
+        url('wp-content/themes/rs_web_dev/assets/fonts/8-bit/8-bit_madness-webfont.svg#8-bit_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,43 @@
+%mb, .mb {
+	margin-bottom: $margin-bottom;
+}
+
+%mb-clear, .mb-clear {
+	margin-bottom: 0 !important;
+}
+
+%rounded-top, .rounded-top {
+	border-radius: $border-radius-base $border-radius-base 0 0;
+}
+
+%ellipsis, .ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// Force elements into hardware accelearation
+// Usage: .your-class { @extend %anim-force; }
+%accel, .accel {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.rel {
+	position: relative;
+}
+
+.text-white {
+	color: white !important;
+}
+
+.text-info {
+	color: $brand-info !important;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+.margin-top-neg-15 {
+	margin-top: -15px !important;
+}

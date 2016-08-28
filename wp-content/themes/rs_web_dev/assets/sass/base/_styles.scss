@@ -1,0 +1,9 @@
+// Set a max width for site wide containers
+@if $site-max-width {
+
+	.container,
+	.container-fluid {
+		max-width: $site-max-width;
+	}
+
+}

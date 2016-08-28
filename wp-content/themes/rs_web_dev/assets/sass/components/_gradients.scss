@@ -1,0 +1,14 @@
+%navbar-gradient {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.49, #4C90C5),
+		color-stop(0.51, #1C5E8D)
+	);
+	background-image: -o-linear-gradient(bottom, #407daf 49%, #1c6294 51%);
+	background-image: -moz-linear-gradient(bottom, #407daf 49%, #1c6294 51%);
+	background-image: -webkit-linear-gradient(bottom, #407daf 49%, #1c6294 51%);
+	background-image: -ms-linear-gradient(bottom, #407daf 49%, #1c6294 51%);
+	background-image: linear-gradient(to bottom, #407daf 49%, #1c6294 51%);
+}

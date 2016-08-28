@@ -1,0 +1,70 @@
+
+/* ==========================================================================
+   Breakpoint helper
+
+	Usage:
+	body {
+		background-color: #fff;
+		@include bp(sm) {
+			background-color: #ccc;
+		}
+		@include bp(md) {
+			background-color: #999;
+		}
+		@include bp(lg) {
+			background-color: #666;
+		}
+	}
+   ========================================================================== */
+
+@mixin bp($break) {
+	@if $break == xxl {
+		@media (min-width: $screen-xxl) { @content; }
+	}
+	@else if $break == xl {
+		@media (min-width: $screen-xl) { @content; }
+	}
+	@else if $break == lg {
+		@media (min-width: $screen-lg) { @content; }
+	}
+	@else if $break == md {
+		@media (min-width: $screen-md) { @content; }
+	}
+	@else if $break == sm {
+		@media (min-width: $screen-sm) { @content; }
+	}
+	@else {
+		@media ($break) { @content; }
+	}
+}
+
+/* ==========================================================================
+   Reset Box Sizing
+
+	Use for third party html/css that doesn't work with 'border-box'
+	http://getbootstrap.com/getting-started/#third-parties
+   ========================================================================== */
+
+@mixin reset-box-sizing() {
+	&,
+	*,
+	*:before,
+	*:after {
+		box-sizing: content-box;
+	}
+}
+
+
+@mixin retina() {
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+		@content;
+	}
+}
+
+@mixin vertical-align($value) {
+  position: relative;
+  top: $value;
+  -webkit-transform: translateY(- $value);
+  -ms-transform: translateY(- $value);
+  transform: translateY(- $value);
+}

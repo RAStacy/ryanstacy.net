@@ -1,0 +1,40 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+// BreakPoint Mixin Test (REMOVE)
+body {
+	background-color: #fff;
+	@include bp(sm) {
+		background-color: #ddd;
+	}
+	@include bp(md) {
+		background-color: #bbb;
+	}
+	@include bp(lg) {
+		background-color: #999;
+	}
+}
+
+a {
+	outline: none !important;
+	font-weight: bold;
+}
+
+img {
+	@extend .img-responsive;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+
+}

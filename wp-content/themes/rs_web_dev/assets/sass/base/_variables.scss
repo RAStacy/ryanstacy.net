@@ -1,0 +1,18 @@
+// Default transition time
+$transition-time: .2s;
+
+// Default margin-bottom override
+$margin-bottom: 20px;
+
+// Base Border Radius
+$border-radius-base: 3px;
+
+// Font Stacks
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, Times, "Times New Roman", serif;
+
+// Desktop Footer Static Height (used for sticky footer)
+$footer-desktop-height: 70px;
+
+// Site Max Width (sets a max-width on bootstrap containers)
+$site-max-width: 990px;

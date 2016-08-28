@@ -1,0 +1,36 @@
+#footer {
+	margin-top: 0;
+}
+
+.page-wrap {
+	padding-bottom: 20px;
+}
+
+/**
+ * Sticky Footer Setup
+ * http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+ * https://css-tricks.com/snippets/css/sticky-footer/
+ *
+ * Only runs on desktop browsers due to needing a fixed height footer.
+ */
+
+@if $footer-desktop-height {
+
+	.page-wrap {
+		@include bp(md) {
+			min-height: 100%;
+			/* equal to footer height */
+			margin-bottom: -($footer-desktop-height);
+		}
+	}
+	.page-wrap:after {
+		content: "";
+		display: block;
+	}
+	#footer, .page-wrap:after {
+		@include bp(md) {
+			height: $footer-desktop-height;
+		}
+	}
+
+}

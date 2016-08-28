@@ -1,0 +1,630 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Font-Face
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+
+/* #Font-Face
+================================================== */
+@font-face {
+    font-family: '8-bit';
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot');
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/8-bit/8-bit_madness-webfont.woff') format('woff'),
+        url('../fonts/8-bit/8-bit_madness-webfont.ttf') format('truetype'),
+        url('../fonts/8-bit/8-bit_madness-webfont.svg#8-bit_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* #Site Styles
+================================================== */
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+    font-family: helvetica;
+    line-height: normal;
+    position: relative;
+}
+a:hover {
+	text-decoration: none;
+}
+ul {
+    color: inherit;
+    font-size: 16px;
+    margin: 10px 0 10px 25px;
+}
+
+/* Color Pallet */
+.bblack{
+    background-color: #282828;
+}
+.bgreen {
+    background-color: #679651;
+}
+.blgreen {
+    background-color: #CEE6C4;
+}
+.bgrey {
+    background-color: #b3b3b3;
+}
+.bred {
+    background-color: #AF3939;
+}
+.byellow {
+    background-color: #fff400;
+}
+.bgreen, .bgrey, .bred, .bblack {
+    padding: 50px 0;
+}
+
+/* Header */
+
+.top-logo {
+    display: inline;
+    padding: 10px;
+}
+.top-logo img {
+    display: block;
+    margin: auto;
+}
+.social {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    width: 36px;
+}
+.social.email {
+  height: 29px;
+  width: 29px;
+}
+.top-title {
+  color: black;
+  font-family: '8-bit';
+  font-size: 100px;
+  position: absolute;
+  left: 235px;
+  bottom: 5px;
+}
+.top-title-wp {
+  color: black;
+  font-family: '8-bit';
+  font-size: 100px;
+  position: absolute;
+  left: 230px;
+  bottom: -39.5px;
+}
+.top-title:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.accord-title {
+  display: none;
+}
+.half {
+  width: 50%;
+}
+.main.content {
+    position: relative;
+}
+.right {
+    float: right;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Brave Plugin */
+
+.brave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 210px;
+}
+.brave img {
+  width: 100%;
+  position: absolute;
+  top: -12px;
+  right: -14px;
+}
+
+/* Screen sizes smaller than 1275 (devices and browsers) */
+  @media only screen and (min-width: 1050px) and (max-width: 1275px) {
+    .brave img {
+      width: 70%;
+    }
+  }
+/* Screen sizes smaller than 1050 (devices and browsers) */
+  @media only screen and (min-width: 900px) and (max-width: 1050px) {
+    .brave img {
+      width: 55%;
+      top: -6px;
+      right: -8px;
+    }
+  }
+/* Screen sizes smaller than 1050 (devices and browsers) */
+  @media only screen and (min-width: 767px) and (max-width: 900px) {
+    .brave img {
+      width: 45%;
+      top: -6px;
+      right: -8px;
+    }
+  }
+/* Screen sizes smaller than 1050 (devices and browsers) */
+  @media only screen and (max-width: 767px) {
+    .brave img {
+      display: none;
+    }
+  }
+
+
+
+/* Sticky Footer */
+.footer input {
+	line-height: 30px;
+	width: 500px;
+}
+.btn {
+	margin-top: 25px;
+	transition: color .5s;
+	width: 150px;
+	font-family: '8-bit';
+	font-size: 30px;
+	padding: 5px;
+    line-height: normal;
+}
+.btn:hover {
+	color: red;
+}
+.control-group:first-of-type {
+    margin-bottom: 20px;
+}
+.control-group input {
+	height: 35px;
+}
+.footer {
+	height: 250px;
+}
+.footer p {
+    color: #fff400;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page-wrap {
+	background-color: #282828;
+  	min-height: 100%;
+  	/* equal to footer + padding height */
+  	margin-bottom: -350px; 
+}
+.page-wrap:after {
+  	content: "";
+	display: block;
+}	
+.placeholder {
+    font-family: '8-bit';
+    font-size: 30px;
+    padding-left: 5px;
+}
+::-webkit-input-placeholder {
+    font-family: '8-bit';
+}
+:-moz-placeholder {
+    font-family: '8-bit';
+}
+::-moz-placeholder {
+    font-family: '8-bit';
+}
+:-ms-input-placeholder {
+    font-family: '8-bit';
+}
+.right textarea {
+	line-height: normal;
+	height: 96px;
+    width: 350px;
+}
+.page-wrap:after {
+  	/* .push must be the same height as footer + padding */
+ 	 height: 350px; 
+}
+.submit {
+	text-align: center;
+}
+
+
+
+
+/* #Page Styles
+================================================== */
+
+/* Contact Bar */
+a .contact-label {
+  color: #333;
+}
+a:visited .contact-label {
+  color: #fff400;
+}
+.blog-link img {
+  position: absolute;
+  top: 3px;
+}
+.contact-bar {
+  padding: 5px 0;
+}
+.contact-btn {
+  margin: 8px 0 8px -20px;
+}
+.contact-btn .wrapper {
+  margin-left: 25%;
+  position: relative;
+}
+.contact-label {
+  margin-top: 5px;
+  position: absolute;
+  left: 50px;
+  top: 6px;
+}
+.email-link img {
+  padding-top: 5px;
+}
+
+/* Projects */
+
+/* .container.main {
+	min-height: 960px;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	top: 181px;
+	margin: 0 auto;
+	left: 20%;
+}   
+
+Only needed when using animated solar background */
+
+.examples h2 {
+  color: #fff400;
+}
+
+.landing-pages, .blog-pages {
+  margin: 45px 0;
+}
+
+.landing-pages .page img {
+  width: 450px;
+  height: auto;
+  margin: 25px 0;
+}
+
+.examples .blog-pages .page {
+  width: 300px;
+}
+
+.blog-pages .page img {
+  width: 280px;
+  height: auto;
+  margin: 25px 0;
+}
+ 
+
+/* Paper, Rock, Scissors Game */
+.outcome {
+    margin-top: 30px;
+}
+.results {
+    width: 45%;
+    display: inline-block;
+}
+.output {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+}
+.score {
+    position: absolute;
+    top: 15px;
+}
+.score.win {
+    left: 15px;
+}
+.score.lose {
+    right: 35px;
+}
+.winner {
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 380px;
+}
+.prs-img {
+    display: none;
+  }
+#prsGame {
+    height: 275px;
+    width: 380px;
+    background-color: rgba(170, 170, 170, 0.82);
+    border: 3px solid black;
+    margin: 35px 0;
+    padding: 35px;
+    position: relative;
+    text-align: center;
+}
+#prsGame #userInput {
+    padding-left: 7px;
+    height: 28px;
+    width: 139px;
+}
+#reset-btn {
+    position: relative;
+}
+#reset-btn.reset-btn {
+    font-size: 15px;
+    width: 80px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* #Media Queries
+================================================== */
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {
+    .contact-btn {
+      margin: 0 0 0 -20px;
+    }
+    .footer input {
+        width: 350px;
+    }
+  }
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .contact-btn {
+      margin: 0 0 0 -20px;
+      padding: 5px 0;
+    }
+    .contact-label {
+      font-size: 14px;
+      width: 100%;
+    }
+    .top-logo {
+      height: auto;
+      margin-left: 25px;
+      padding: 10px;
+      width: 125px;
+    }
+    .top-title {
+      font-size: 80px;
+      left: 165px;
+      bottom: 4px;
+    }
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+	textarea.right {
+		float: none;
+	}
+  .github-link img {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    width: 36.5px;
+    background-color: #fff;
+  }
+	.btn {
+		margin-top: 0;
+	}
+	.clearfix.row {
+		margin-bottom: 0;
+	}
+	.contact-bar {
+      position: fixed;
+      left: 0;
+      top: 43.5px;
+      z-index: 50;
+      width: 50px;
+      background-color: transparent;
+    }
+    .contact-btn {
+      margin: 0;
+    }
+    .contact-btn .wrapper {
+      margin: 0;
+    }
+    .control-group {
+      margin-bottom: 20px;
+    }
+    .contact-label {
+      display: none;
+    }
+    .email {
+      background-color: #b3b3b3;
+      padding: 2px 4px;
+      transition: padding .35s;
+    }
+    .email:hover {
+      padding: 2px 7px;
+    }
+    .footer {
+      height: 370px;
+    }
+    .footer input {
+        width: 420px;
+    }
+    .google {
+      background-color: #C63D2D;
+      padding-left: 1px;
+      transition: padding .35s;
+    }
+    .google:hover {
+      padding: 0 4px 0 4px;
+    }
+	.linkedin {
+		background-color: #4875B4;
+		padding-left: 1px;
+		transition:padding .35s;
+	}
+	.linkedin:hover {
+		padding: 0 4px 0 4px;
+	}
+	.logo {
+		width: 50% !important;
+	}
+    .no-mobile {
+      display: none;
+    }
+	.page-wrap {
+	    min-height: 100%;
+	    /* equal to footer + padding height */
+	    margin-bottom: -470px; 
+	}
+	.page-wrap:after {
+	    /* .push must be the same height as footer + padding */
+	    height: 470px; 
+	}
+    .paypal {
+      display: none;
+    }
+    .paypal-mobile {
+      display: block;
+    }
+    .paypal-mobile-img {
+      background-color: #b3b3b3;
+      padding: 5.5px 6px;
+      transition: padding .35s;
+      width: 25px;
+      height: auto;
+    }
+    .paypal-mobile-img:hover {
+      padding: 5.5px 9px;
+    }
+    .paypal-mobile form {
+      height: 0;
+    }
+		.placeholder, .right textarea {
+			width: 100%;
+		}
+    .prs-img {
+      display: block;
+      text-align: center;
+    }
+    #modal {
+      padding: 0;
+    }
+    #modal #content {
+      padding: 0;
+    }
+    #prsGame {
+      height: 400px;
+      width: 235px;
+      margin: 0;
+    }
+    #prsGame .row {
+      margin-bottom: 45px;
+    }
+    .left #userOutputM {
+        margin-top: 28px;
+    }
+    .results {
+      height: 60px;
+    }
+    .winner {
+      bottom: 85px;
+      width: 80%;
+    }
+    
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.top-logo {
+			padding: 5px;
+			width: 75px;
+		}
+		.top-title {
+			font-size: 40px;
+			left: 88px;
+			bottom: 5px;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.contact-bar {
+			top: 32px;
+		}
+    
+    .flexslider {
+    	width: 206px;
+      height: 100px;
+      right: 25px;
+    }
+
+    .footer {
+    	height: 430px;
+    }
+
+    .footer input {
+        line-height: 30px;
+        height: 25px;
+        width: 300px;
+    }
+		.page-wrap {
+		    min-height: 100%;
+		    /* equal to footer + padding height */
+		    margin-bottom: -480px; 
+		}
+		.page-wrap:after {
+		    /* .push must be the same height as footer + padding */
+		    height: 480px; 
+		}
+    .top-logo {
+			padding: 5px;
+			width: 50px;
+		}
+		.top-title {
+			font-size: 29px;
+			left: 65px;
+			bottom: 6px;
+		}
+
+
+    .landing-pages .page img {
+      width: 300px;
+    }
+
+    .blog-pages .page img {
+      width: 100%;
+    }
+    
+	}
+
+
+
