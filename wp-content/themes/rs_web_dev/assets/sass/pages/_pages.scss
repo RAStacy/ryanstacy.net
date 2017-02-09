@@ -1,0 +1,154 @@
+.post-template-default, .blog {
+	
+	.site-main {
+		background: url('../images/code-blur.jpg');
+
+		.container {
+			background-color: $page-bkg;
+		}
+	}
+}
+
+.blog {
+	.post-115 {
+		.thumb {
+			float: left;
+    		margin: 0 10px 10px 0;
+		}
+
+		.entry-meta {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.single article, .category article, .archive article {
+	padding-right: 30px;
+
+	.thumb {
+		margin-bottom: 20px;
+	}
+}
+
+.sidebar {
+	padding: 20px 15px;
+}
+
+.page-template-default {
+	.site-main {
+		background: url('../images/code-blur.jpg');
+	}
+
+	article {
+		background: $page-bkg;
+    	padding: 10px 30px;
+	}
+
+	.entry-title {
+		font-family: $lato-blk;
+	}
+	.entry-content {
+		color: $black;
+		font-family: $lato-reg;
+		font-size: 18px;
+	    padding-bottom: 30px;
+	    letter-spacing: 1.1px;
+	}
+}
+
+blockquote {
+	border-left: 5px solid $gold;
+	margin: 0;
+    padding: 10px 0 10px 20px;
+}
+
+.page-template-work-template {
+	.site-main {
+		position: relative;
+	}
+	.entry-title {
+		color: rgba(255, 255, 255, 0.9);
+	}
+	.panels {
+		position: relative;
+		min-height: 890px;
+		top: 50px;
+
+		.flip-container {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.back {
+
+	.emp {
+		float: right;
+
+		.emp-statement {
+			font-size: 10px;
+		    width: 100%;
+		    text-align: center;
+		    display: block;
+		}
+
+		img {
+			max-width: 75px;
+			margin: 0 0 7px 7px;
+		}
+	}
+
+	h2 {
+		font-size: 20px;
+		margin-top: 0;
+		max-width: 260px;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.page-id-68 .wpcf7 label {
+	color: $light-black;
+}
+
+.listing .list {
+	margin-bottom: 4em;
+
+	&:last-of-type {
+		border-bottom: 0;
+	}
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.page-id-68 {
+
+	.wpcf7-form .wpcf7-form-control-wrap input {
+		width: 100%;
+		border: 0;
+	}
+
+	.post-68 .text.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.testimonials {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.single article, .category article, .archive article {
+		padding-right: initial;
+	}
+	.testimonials {
+		padding-bottom: initial;
+	}
+}

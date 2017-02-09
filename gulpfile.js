@@ -19,6 +19,11 @@ var cleanCSS = require('gulp-clean-css');
 
 // Other Plugins
 var rename = require('gulp-rename');
+var imagemin = require('gulp-imagemin');
+var imagemin = require('lossy-imagemin');
+var cache = require('gulp-cache');
+var pngquant = require('imagemin-pngquant');
+var mozjpeg = require('imagemin-mozjpeg');
 
 // Gulp Tasks //
 ////////////////
@@ -56,8 +61,9 @@ gulp.task('js', ['concatenateJS', 'minifyJS']);
 // Concatenate Our CSS Files
 gulp.task('concatenateCSS', function() {
     return gulp.src(['wp-content/themes/rs_web_dev/assets/css/normalize.css',
-    				 'wp-content/themes/rs_web_dev/assets/css/fonts.css',
-					 'wp-content/themes/rs_web_dev/assets/css/solar.css',
+    				         'wp-content/themes/rs_web_dev/assets/css/fonts.css',
+                     'wp-content/themes/rs_web_dev/assets/css/vendor/animate.css',
+					           'wp-content/themes/rs_web_dev/assets/css/solar.css',
                      'wp-content/themes/rs_web_dev/assets/css/projects.css',
                      'wp-content/themes/rs_web_dev/style.css',
                      'wp-content/themes/rs_web_dev/assets/css/main.css'])
@@ -75,6 +81,27 @@ gulp.task('minifyCSS', ['concatenateCSS'], function() {
 
 // Concatenate and Minify CSS Files
 gulp.task('css', ['concatenateCSS', 'minifyCSS']);
+
+/*
+// Image minification
+
+
+
+
+
+
+
+//Lossy Image minification
+var opt = {
+  base: 'wp-content/themes/rs_web_dev/assets/images/*',          // destPath retain src dir info 
+  jpgQuality: '70',     // max 100, default: 70 
+  cache: false          // use gulp cache [true] 
+};
+imagemin(srcGlob, destPath, opt, function(err) {
+  if (err) {
+    console.error(err);
+  }
+});*/
 
 // Watch Files For Changes
 gulp.task('watch', function() {

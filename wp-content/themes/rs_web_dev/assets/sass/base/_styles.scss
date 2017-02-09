@@ -6,4 +6,33 @@
 		max-width: $site-max-width;
 	}
 
+	.alignright {
+		float: right;
+	}
+
+	.alignleft {
+		float: left;
+	}
+
+	.aligncenter {
+		display: block;
+		margin: auto;
+	}
+
+	img.alignright {
+		margin: 0 0 10px 15px;
+	}
+
+	img.alignleft {
+		margin: 0 15px 10px 0;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	img.alignleft, img.alignright {
+		display: block;
+		float: none;
+		margin: 10px auto;
+	}
 }

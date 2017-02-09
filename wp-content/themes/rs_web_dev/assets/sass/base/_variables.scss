@@ -7,12 +7,34 @@ $margin-bottom: 20px;
 // Base Border Radius
 $border-radius-base: 3px;
 
+// Colors
+$black: #000;
+$white: #fff;
+$grey: #b3b3b3;
+$gold: #b28124;
+$dark-gold: #9d7729;
+$green: #4e6555;
+$navy: #2d3c4f;
+$orange: #d27328;
+$blue-grey: #697dac;
+$dark-grey: #424242;
+$light-black: #222;
+
 // Font Stacks
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, Times, "Times New Roman", serif;
+$lato-blk: "Lato Black";
+$lato-bld: "Lato Bold";
+$lato-reg: "Lato Regular";
+$sf-galaxy: "SF Galaxy Alt";
+$sf-galaxy-ol: "SF Galaxy Ol";
+
+// Default page content background color
+$page-bkg: rgba(200, 200, 200, 0.9);
 
 // Desktop Footer Static Height (used for sticky footer)
-$footer-desktop-height: 70px;
+$footer-desktop-height: 0;
 
 // Site Max Width (sets a max-width on bootstrap containers)
-$site-max-width: 990px;
+$site-max-width: 1170px;
+

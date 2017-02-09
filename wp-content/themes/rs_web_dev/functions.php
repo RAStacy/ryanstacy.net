@@ -102,11 +102,20 @@ add_action( 'widgets_init', 'rs_web_dev_widgets_init' );
  * Enqueue scripts and styles.
  */
 function rs_web_dev_scripts() {
+	// AOS css file
+	wp_enqueue_style( 'aos-css', get_stylesheet_directory_uri() . "/assets/css/vendor/aos.css" );
+
 	// Main css file
-	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . "/assets/build/css/main.min.css" );
+	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . "/assets/css/main.css" );
+
+	// Cycle js
+	wp_enqueue_script( 'cycle', get_template_directory_uri() . '/assets/js/vendor/cycle.min.js', array(), null, true );
+
+	// AOS js
+	wp_enqueue_script( 'aos-js', get_template_directory_uri() . '/assets/js/vendor/aos.js', array(), null, true );
 
 	// Main js file
-	wp_enqueue_script( 'rs-web-dev-scripts', get_template_directory_uri() . '/assets/build/js/main.min.js', array(), '20160827', true );
+	wp_enqueue_script( 'rs-web-dev-scripts', get_template_directory_uri() . '/assets/build/js/main.min.js', array(), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

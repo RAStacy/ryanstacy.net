@@ -17,7 +17,22 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
+		?>
 
+		<div class="thumb">
+			<?php
+				if ( has_post_thumbnail() ) {
+
+					if(is_home()) {
+						the_post_thumbnail('thumbnail');
+					} else {
+						the_post_thumbnail('large');
+					}
+				} 
+			?>
+		</div>
+
+		<?php
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php rs_web_dev_posted_on(); ?>

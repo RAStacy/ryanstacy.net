@@ -10893,6 +10893,36 @@ button.close {
   margin-top: -15px !important;
 }
 
+@font-face {
+  font-family: "Lato Black";
+  src: url("../../../../../../../fonts/Lato Black.eot?") format("eot"),url("../../../../../../../fonts/Lato Black.woff2") format("woff2"),url("../../../../../../../fonts/Lato Black.woff") format("woff"),url("../../../../../../../fonts/Lato Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../../../../../../../fonts/Lato Bold.eot?") format("eot"),url("../../../../../../../fonts/Lato Bold.woff2") format("woff2"),url("../../../../../../../fonts/Lato Bold.woff") format("woff"),url("../../../../../../../fonts/Lato Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../../../../../../../fonts/Lato Regular.eot?") format("eot"),url("../../../../../../../fonts/Lato Regular.woff2") format("woff2"),url("../../../../../../../fonts/Lato Regular.woff") format("woff"),url("../../../../../../../fonts/Lato Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../../../../../../../fonts/Lato Regular.eot?") format("eot"),url("../../../../../../../fonts/Lato Regular.woff2") format("woff2"),url("../../../../../../../fonts/Lato Regular.woff") format("woff"),url("../../../../../../../fonts/Lato Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Galaxy Alt";
+  src: url("../../../../../../../fonts/SF Distant Galaxy Alternate.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Galaxy Ol";
+  src: url("../../../../../../../fonts/SF Distant Galaxy Outline.ttf") format("truetype");
+}
+
 html,
 body {
   height: 100%;
@@ -10959,6 +10989,53 @@ a {
 .container,
 .container-fluid {
   max-width: 990px;
+}
+
+.top-bar {
+  background: #000;
+  position: relative;
+}
+
+.top-bar .home-top-title {
+  color: #4a6b3b;
+  display: block;
+  font-family: "SF Galaxy Ol";
+  font-size: 24px;
+  letter-spacing: 24px;
+  padding: 23px 0;
+  text-align: center;
+}
+
+.top-bar .home-top-title:hover {
+  text-decoration: none;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-container .hero {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.nav-container #primary-menu {
+  bottom: 20%;
+  position: absolute;
+}
+
+@media screen and (max-width: 760px) {
+  #primary-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

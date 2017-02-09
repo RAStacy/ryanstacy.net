@@ -1,0 +1,223 @@
+.info-wrapper {
+	padding: 100px 0 60px 0;
+
+	.gold-title {
+		color: $gold;
+		font-family: $sf-galaxy-ol;
+		font-size: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+		letter-spacing: 24px;
+	}
+
+	h3 {
+		color: $grey;
+		font-family: $lato-reg;
+	    font-size: 20px;
+	    font-weight: 700;
+	}
+
+	.text p {
+		color: $gold;
+		font-family: $lato-reg;
+		font-size: 19px;
+	}
+}
+
+.feature-wrapper {
+	background: url('../images/feature-bg.png');
+	background-size: cover;
+	padding: 100px 0 60px 0;
+
+	.feature-button {
+		background-size: cover;
+		padding: 70px 45px 48px 0;
+
+		&.white {
+			background-color: $white;
+		}
+
+		&.green {
+			background-color: $green;
+		}
+
+		&.navy {
+			background-color: $navy;
+		}
+
+		&.orange {
+			background-color: $orange;
+		}
+	}
+
+	.btn-title {
+		padding: 39px;
+		border-radius: 50%;
+		float: right;
+		font-family: $lato-blk;
+		font-size: 33px;
+		text-align: left;
+		width: 174px;
+		
+		&.black {
+			background-color: $black;
+			color: $white;
+		}
+
+		&.white {
+			background-color: $white;
+			color: $black;
+		}
+	}
+
+	.btn-link {
+		margin-top: 30px;
+		text-align: right;
+
+		a {
+			color: $black;
+			font-family: $lato-blk;
+			font-size: 14px;
+			text-align: right;
+			width: 100%;
+
+			&:hover, &:visited, &:focus {
+		    	color: $black;
+		    	text-decoration: none !important;
+		    }
+		}
+
+	    span {
+	    	font-size: 17px;
+	    	font-weight: bold;
+	    	vertical-align: middle;
+	    }
+	}
+}
+
+.mission-wrapper {
+	background-color: $black;
+	background: url('../images/boba-fett.png');
+	background-size: cover;
+	padding: 100px 0 150px;
+
+	.mission-title {
+
+		img {
+			margin: auto;
+		}
+
+		span {
+			color: $blue-grey;
+			display: block;
+			font-family: $lato-reg;
+			font-size: 36px;
+			letter-spacing: 24px;
+			margin: -20px 0 30px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+
+	p {
+		color: $white;
+		font-family: $lato-reg;
+		font-size: 19px;
+		width: 80%;
+    	margin: auto;
+	}
+}
+
+.form-wrapper {
+	background: url('../images/bg-form.png');
+	background-size: cover;
+	padding: 25px 0 60px 0;
+
+	.form-title {
+		color: $white;
+		display: block;
+		font-family: $lato-reg;
+		font-size: 31.75px;
+		letter-spacing: 24px;
+		margin: 20px 0 30px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+}
+
+.rs-large {
+	display: block;
+	margin: auto;
+}
+
+.learn-more-btn {
+	background: url('../images/btn.png');
+	background-size: initial;
+	border: none;
+	color: $white;
+	display: block;
+	font-family: $lato-bld;
+	font-size: 20px;
+	height: 116px;
+    width: 356px;
+    margin: 55px auto 0;
+
+    &:hover, &:visited, &:focus {
+    	color: $white;
+    	text-decoration: none;
+    }
+}
+
+video.fullscreen { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 991px) {
+	.desktop-view {
+		display: none;
+	}
+	.info-wrapper {
+		background: url('../images/starfield.png');
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.info-wrapper .gold-title {
+		font-size: 22px;
+    	letter-spacing: 12px;
+	}
+
+	.learn-more-btn {
+		background-size: cover;
+		width: 80%;
+	    height: auto;
+	    padding: 26px;
+	}
+
+	.mission-wrapper .mission-title {
+
+		span {
+			font-size: 20px;
+			letter-spacing: 20px;
+			padding-left: 13px;
+		}
+	}
+
+	.feature-wrapper .feature-button.orange {
+		background-position-y: -55px;
+	    background-position-x: -29px;
+	    overflow: hidden;
+	}
+
+}

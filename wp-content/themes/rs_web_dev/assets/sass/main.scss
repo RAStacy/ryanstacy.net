@@ -11,6 +11,7 @@
 // Helpers
 @import "util/mixins";
 @import "util/utilities";
+@import "base/fonts";
 
 // Base html elements
 @import "base/base";
@@ -31,6 +32,7 @@
 @import "components/navbar";
 @import "components/sidebar";
 @import "components/footer";
+@import "components/homepage";
 @import "components/featured";
 @import "components/sliders";
 @import "components/search";

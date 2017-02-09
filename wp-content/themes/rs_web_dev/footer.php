@@ -13,13 +13,35 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rs_web_dev' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'rs_web_dev' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'rs_web_dev' ), 'rs_web_dev', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer>
+	    <div class="sub-footer">
+	    	<div class="container">
+	    		<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<p class="copyright">&copy;<?php echo date("Y"); ?> Ryan Stacy Web Development</p>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="footer-nav">
+							<p class="copyright"><a href="/licensing/">Licensing</a></p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<ul class="social">
+							<li class="col-xs-4 col-sm-4 ">
+								<a href="<?php the_field('fb_link'); ?>" target="_blank"><img class="fb-icon" src="/wp-content/themes/rs_web_dev/assets/images/fb-icon.png"></a>
+							</li>
+							<li class="col-xs-4 col-sm-4 ">
+								<a href="<?php the_field('li_link'); ?>" target="_blank"><img class="li-icon" src="/wp-content/themes/rs_web_dev/assets/images/li-icon.png"></a>
+							</li>
+							<li class="col-xs-4 col-sm-4 ">
+								<a href="<?php the_field('gh_link'); ?>" target="_blank"><img class="gh-icon" src="/wp-content/themes/rs_web_dev/assets/images/gh-icon.png"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
