@@ -37,4 +37,7 @@ jspm_packages
 .node_repl_history
 
 # Remove WP config file
-wp-config.php
+/wp-config.php
+
+# Videos often too large for git
+.mp4
