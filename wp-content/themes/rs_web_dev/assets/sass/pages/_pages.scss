@@ -34,7 +34,7 @@
 	padding: 20px 15px;
 }
 
-.page-template-default {
+.page-template-default, .page-template-contact-template {
 	.site-main {
 		background: url('../images/code-blur.jpg');
 	}
@@ -46,6 +46,8 @@
 
 	.entry-title {
 		font-family: $lato-blk;
+		border-bottom: 4px solid $gold;
+	    max-width: 280px;
 	}
 	.entry-content {
 		color: $black;
@@ -54,6 +56,11 @@
 	    padding-bottom: 30px;
 	    letter-spacing: 1.1px;
 	}
+}
+
+.page-template-contact-template .site-main .container:first-of-type {
+	background: $page-bkg;
+    padding: 10px 30px;
 }
 
 blockquote {
@@ -109,6 +116,26 @@ blockquote {
 	}
 }
 
+.testimonials {
+	position: relative;
+
+	.testimonails-btn {
+		position: absolute;
+		top: -29px;
+	    right: 10px;
+	    padding: 25px 27px;
+		background: url('../images/btn.png');
+		background-size: cover;
+		border: none;
+		color: $white;
+		font-family: $lato-bld;
+		font-size: 17px;
+	    height: 72px;
+	    max-width: 289px;
+	    text-decoration: none;
+	}
+}
+
 .page-id-68 .wpcf7 label {
 	color: $light-black;
 }
@@ -135,6 +162,18 @@ blockquote {
 	.post-68 .text.row {
 		margin-left: 0;
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.testimonials .testimonails-btn {
+		position: relative;
+		display: block;
+		top: 0;
+		right: 0;
+		margin: 10px auto;
+    	padding: 35px 59px;
+		height: auto;
 	}
 }
 

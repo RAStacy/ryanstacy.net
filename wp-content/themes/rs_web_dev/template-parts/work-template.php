@@ -192,6 +192,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="testimonials">
 						<h2>Check out what my clients have to say:</h2>
+						<a class="testimonails-btn" href="/reviews/">Read Full Testimonials</a>
 						<?php echo do_shortcode('[testimonials_slider title_link="/testimonials/"]'); ?>
 					</div>
 				</div>

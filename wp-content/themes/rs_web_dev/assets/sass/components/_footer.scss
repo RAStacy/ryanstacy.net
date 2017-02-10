@@ -46,8 +46,10 @@
 	.wpcf7-form-control-wrap {
 		input {
 			max-width: 100%;
+		}
 
-
+		input, textarea {
+			color: $white;
 		}
 
 	}
