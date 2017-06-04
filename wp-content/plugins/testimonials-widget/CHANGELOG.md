@@ -2,6 +2,16 @@
 
 ## master
 
+## 3.4.2
+* Confirm WordPress 4.8 compatibility
+
+## 3.4.1
+* Remove review schema completely
+* Set max rating variable to 5
+
+## 3.4.0
+* Remove review schema code
+
 ## 3.3.6
 * Change support email address to `support@axelerant.com`
 * Require Aihrus Framework 1.2.9
